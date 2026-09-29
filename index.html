@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>A Message For You 💌 | A Cute Interactive Flipbook</title>
+  <meta name="description"
+    content="A lovely cute interactive flipbook letter with swiping, page flips, and heartwarming notes.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient floating sparkles & pastel hearts -->
+  <div class="ambient-background" id="ambientBg" aria-hidden="true"></div>
+
+  <!-- Cute Floating Music Button -->
+  <aside class="music-floating-corner">
+    <button class="music-pill-btn" id="musicPillBtn" aria-label="Open Music Playlist" title="Play Songs For Jo">
+      <span class="music-note-icon">🎵</span>
+      <span class="music-pill-label">Songs For Jo</span>
+    </button>
+  </aside>
+  <main class="stage-container">
+    <div class="book-container" id="bookContainer">
+
+      <!-- Hanging Ribbon Bookmark -->
+      <div class="ribbon-bookmark" id="ribbonBookmark" title="Ribbon Bookmark">
+        <div class="ribbon-tail"></div>
+      </div>
+
+      <!-- Book Stack Shadow & Pages -->
+      <div class="book" id="book" role="region" aria-label="Interactive Flipbook">
+
+        <!-- ================= PAGE 0: Front Cover ================= -->
+        <article class="page page-cover-front active" data-index="0" id="page-0">
+          <div class="cover-inner">
+            <div class="cover-border">
+              <div class="corner-ornament top-left">🌸</div>
+              <div class="corner-ornament top-right">🌸</div>
+              <div class="corner-ornament bottom-left">🌸</div>
+              <div class="corner-ornament bottom-right">🌸</div>
+
+              <div class="ribbon-badge">Special Edition</div>
+
+              <div class="wax-seal-wrapper">
+                <div class="wax-seal">
+                  <span class="seal-emoji">💌</span>
+                </div>
+              </div>
+
+              <div class="title-group">
+                <h1 class="main-title">A Message</h1>
+                <span class="sub-script">For You Jo!</span>
+                <p class="cover-subtitle">A collection of sweet thoughts, letters & gentle wishes</p>
+              </div>
+
+              <div class="cover-footer-hint">
+                <span class="sparkle-anim">✨</span>
+                <span class="hint-text">Swipe left or tap to open</span>
+                <span class="sparkle-anim">✨</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 1: Letter 1 ================= -->
+        <article class="page page-letter" data-index="1" id="page-1">
+          <div class="paper-sheet">
+            <!-- Washi tape at top -->
+            <div class="washi-tape washi-top-right"></div>
+
+            <div class="postage-stamp">
+              <span class="stamp-top">AIR MAIL</span>
+              <span class="stamp-heart">💖</span>
+              <span class="stamp-bot">№ 01</span>
+            </div>
+
+            <div class="letter-head">
+              <span class="date-badge">September 29, 2026</span>
+              <h2 class="letter-greeting">Dearest Jo,</h2>
+            </div>
+
+            <div class="letter-body">
+              <p><span class="drop-letter">L</span>ife has been hard lately, and I’ve noticed that you’ve been
+                overthinking and feeling anxious again. Things are heavy right now, yes, and you are definitely so
+                strong. But being strong doesn't mean you have to face everything all at once. You don’t need to figure
+                out your entire life today, and you don’t need to put it all together in one go.</p>
+              <p>You’ve already survived so many difficult days you once thought you couldn't. You have been carrying so
+                much quietly on your shoulders, doing your absolute best even when your heart feels tired. Please give
+                yourself permission to just pause, take a deep breath, and take things one gentle moment at a time.</p>
+              <p>You don't have to carry the weight of the world alone. Be kind to yourself today, because you are doing
+                so much better than you give yourself credit for. 💖</p>
+            </div>
+
+            <div class="cute-doodle-divider">🌸 • 🌷 • 🌸</div>
+
+            <div class="paper-footer">
+              <span class="page-num">- 1 -</span>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 2: Letter 2 ================= -->
+        <article class="page page-letter" data-index="2" id="page-2">
+          <div class="paper-sheet">
+            <div class="washi-tape washi-top-left"></div>
+
+            <div class="letter-head">
+              <span class="chapter-tag">Chapter I • Little Moments</span>
+              <h2 class="letter-title">The Sun in Your Smile</h2>
+            </div>
+
+            <div class="letter-body">
+              <p>Some people easily assume you’re doing completely fine just because they see you smile and hear you
+                laugh. They don’t always see the silent weight or the quiet battles tucked behind those bright eyes and
+                cheerful expressions. They don’t know how much courage it takes for you to keep shining even when things
+                feel heavy.</p>
+
+              <div class="highlight-quote-card">
+                <span class="quote-icon">“</span>
+                <p class="quote-text">Sometimes, that sweet smile of yours is the quiet reason someone else finds the
+                  strength to smile, too.</p>
+              </div>
+
+              <p>Even on the days you feel weary, your presence brings so much comfort to the world around you. Your
+                smile has helped others breathe a little easier and made their days a little brighter. You give so much
+                light to everyone else, please remember that you deserve to receive that very same gentleness and
+                warmth,
+                too. 🌷✨</p>
+            </div>
+
+            <div class="paper-footer">
+              <span class="page-num">- 2 -</span>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 3: Letter 3 ================= -->
+        <article class="page page-letter" data-index="3" id="page-3">
+          <div class="paper-sheet">
+            <div class="washi-tape washi-top-right pink-tape"></div>
+
+            <div class="letter-head">
+              <span class="chapter-tag">Chapter II • Gentle Reminders</span>
+              <h2 class="letter-title">A Hug in Every Line</h2>
+            </div>
+
+            <div class="letter-body">
+              <p>If I could wrap this letter in two arms and give you the warmest hug right now, I would. Whenever your
+                thoughts get too loud or the world feels a bit overwhelming, let these words feel like a cozy blanket
+                around you—warm, quiet, and completely without pressure.</p>
+
+              <p>Please remember to take care of your body and mind: don't skip your meals, remember to drink your milk
+                before sleep and after waking up, and please get some good, restful sleep tonight. And don't forget to
+                give sweet Oreo some extra gentle cuddles—sometimes cats know just how to comfort our hearts. 🐾</p>
+
+              <div class="cute-sticker-note">
+                <span class="sticker-pin">📌</span>
+                <span class="sticker-text">Drink your milk, eat well, cuddle Oreo, and take it one gentle step at a
+                  time! 🥛🐱✨</span>
+              </div>
+            </div>
+
+            <div class="paper-footer">
+              <span class="page-num">- 3 -</span>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 4: Letter 4 ================= -->
+        <article class="page page-letter" data-index="4" id="page-4">
+          <div class="paper-sheet">
+            <div class="washi-tape washi-top-left gold-tape"></div>
+
+            <div class="letter-head">
+              <span class="chapter-tag">Chapter III • Always in Your Corner</span>
+              <h2 class="letter-title">With Grateful Heart</h2>
+            </div>
+
+            <div class="letter-body">
+              <p>I’m really grateful to have met someone like you. For your kind soul, your genuine laugh, and for the
+                wonderful, thoughtful person you are. Getting to know you genuinely makes my days brighter and the world
+                feel like a much warmer place.</p>
+
+              <p>Thank you for simply being you, through the good days and the challenging ones alike. No matter where
+                life takes you or how uncertain things might seem right now, please remember you’ll always have someone
+                who believes in you, appreciates you, and is cheering for you every step of the way.</p>
+
+              <div class="signoff-section">
+                <p class="signoff-intro">Always rooting for you,</p>
+                <p class="handwritten-signature">Warmly & with care ✨</p>
+                <div class="little-hearts">🌸 💫 🌷</div>
+              </div>
+            </div>
+
+            <div class="paper-footer">
+              <span class="page-num">- 4 -</span>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 5: Music Playlist Page ================= -->
+        <article class="page page-letter" data-index="5" id="page-5">
+          <div class="paper-sheet">
+            <div class="washi-tape washi-top-right pink-tape"></div>
+
+            <div class="letter-head">
+              <span class="chapter-tag">Chapter IV • Melodies For You</span>
+              <h2 class="letter-title">A Little Playlist 🎵</h2>
+            </div>
+
+            <div class="letter-body playlist-body">
+              <p>A few gentle, comforting songs that remind me of your warmth and smile. Whenever you need a quiet moment, play one of these:</p>
+
+              <div class="song-list-card">
+                <div class="song-row" data-pick="0">
+                  <span class="song-num">01</span>
+                  <div class="song-meta">
+                    <strong>love.</strong>
+                    <small>wave to earth</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="1">
+                  <span class="song-num">02</span>
+                  <div class="song-meta">
+                    <strong>sunny days</strong>
+                    <small>cozy soundtrack</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="2">
+                  <span class="song-num">03</span>
+                  <div class="song-meta">
+                    <strong>cherry flavoured love</strong>
+                    <small>inside your heart</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="3">
+                  <span class="song-num">04</span>
+                  <div class="song-meta">
+                    <strong>seasons</strong>
+                    <small>wave to earth</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="4">
+                  <span class="song-num">05</span>
+                  <div class="song-meta">
+                    <strong>Superpowers</strong>
+                    <small>Daniel Caesar</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="5">
+                  <span class="song-num">06</span>
+                  <div class="song-meta">
+                    <strong>Always</strong>
+                    <small>Daniel Caesar</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="6">
+                  <span class="song-num">07</span>
+                  <div class="song-meta">
+                    <strong>ALWAYS</strong>
+                    <small>keshi</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="7">
+                  <span class="song-num">08</span>
+                  <div class="song-meta">
+                    <strong>Indecision</strong>
+                    <small>Shae Universe, Daniel Caesar</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="8">
+                  <span class="song-num">09</span>
+                  <div class="song-meta">
+                    <strong>THE SHADE</strong>
+                    <small>Rex Orange County</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+                <div class="song-row" data-pick="9">
+                  <span class="song-num">10</span>
+                  <div class="song-meta">
+                    <strong>Japanese Denim</strong>
+                    <small>Daniel Caesar</small>
+                  </div>
+                  <span class="song-play-icon">▶</span>
+                </div>
+              </div>
+
+              <div class="playlist-btn-wrapper">
+                <button class="open-player-btn" id="openPlayerPageBtn">
+                  <span>🎧 Play Songs in Background</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="paper-footer">
+              <span class="page-num">- 5 -</span>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+        <!-- ================= PAGE 6: Back Cover ================= -->
+        <article class="page page-cover-back" data-index="6" id="page-6">
+          <div class="cover-inner back-inner">
+            <div class="cover-border">
+              <div class="corner-ornament top-left">⭐</div>
+              <div class="corner-ornament top-right">⭐</div>
+              <div class="corner-ornament bottom-left">⭐</div>
+              <div class="corner-ornament bottom-right">⭐</div>
+
+              <div class="back-content">
+                <div class="floating-envelope">💌</div>
+                <h2 class="back-title">The End</h2>
+                <p class="back-quote">“You carry so much light within you.<br>Never forget how special you are.”</p>
+
+                <button class="read-again-btn" id="readAgainBtn" aria-label="Read from beginning">
+                  <span>Read Again 🌸</span>
+                </button>
+              </div>
+
+              <div class="cover-barcode">
+                <div class="barcode-lines"></div>
+                <span class="barcode-text">SPECIAL-LETTER-FOR-DEAREST-JO-2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-edge-highlight"></div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Interactive Bar -->
+  <footer class="app-footer">
+    <div class="navigation-bar">
+      <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Page">
+        <span class="btn-icon">‹</span>
+        <span class="btn-label">Prev</span>
+      </button>
+
+      <div class="indicator-group">
+        <span class="page-title-label" id="pageTitleLabel">Cover</span>
+        <div class="dot-indicators" id="dotIndicators">
+          <button class="dot-btn active" data-target="0" aria-label="Go to Cover"></button>
+          <button class="dot-btn" data-target="1" aria-label="Go to Page 1"></button>
+          <button class="dot-btn" data-target="2" aria-label="Go to Page 2"></button>
+          <button class="dot-btn" data-target="3" aria-label="Go to Page 3"></button>
+          <button class="dot-btn" data-target="4" aria-label="Go to Page 4"></button>
+          <button class="dot-btn" data-target="5" aria-label="Go to Page 5"></button>
+          <button class="dot-btn" data-target="6" aria-label="Go to Back Cover"></button>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Page">
+        <span class="btn-label">Next</span>
+        <span class="btn-icon">›</span>
+      </button>
+    </div>
+
+    <div class="gesture-hint">
+      <span class="gesture-hand">👈</span>
+      <span class="gesture-label">Swipe or tap edges to flip pages</span>
+      <span class="gesture-hand">👉</span>
+    </div>
+  </footer>
+
+  <!-- Cozy Spotify Music Player Drawer Modal -->
+  <div class="music-modal-backdrop" id="musicModalBackdrop" aria-hidden="true">
+    <div class="music-modal-card" role="dialog" aria-label="Music Playlist for Jo">
+      <div class="music-modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">🎧</span>
+          <div>
+            <h3 class="modal-title">Songs For You Jo</h3>
+            <span class="modal-subtitle">Pick a song to play in the background ✨</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Music Player">✕</button>
+      </div>
+
+      <!-- Tab Switcher (10 Tracks) -->
+      <div class="track-tab-bar" id="trackTabBar">
+        <button class="track-tab active" data-track="0">1. love.</button>
+        <button class="track-tab" data-track="1">2. sunny days</button>
+        <button class="track-tab" data-track="2">3. cherry flavoured</button>
+        <button class="track-tab" data-track="3">4. seasons</button>
+        <button class="track-tab" data-track="4">5. Superpowers</button>
+        <button class="track-tab" data-track="5">6. Always (Caesar)</button>
+        <button class="track-tab" data-track="6">7. ALWAYS (keshi)</button>
+        <button class="track-tab" data-track="7">8. Indecision</button>
+        <button class="track-tab" data-track="8">9. THE SHADE</button>
+        <button class="track-tab" data-track="9">10. Japanese Denim</button>
+      </div>
+
+      <!-- Spotify Embed Iframes (10 Tracks) -->
+      <div class="spotify-embed-wrapper">
+        <div class="embed-item active" id="embed-0">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5mtTAScDytxMMqZj14NmlN?utm_source=generator&theme=0&si=3db87a772f804371" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-1">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3URe1bi21ftFK4zh5nO1P1?utm_source=generator&si=a16aa3f7f7e84720" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-2">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2tBaswRea2Mw9eUrDdVtAD?utm_source=generator&si=169bcf0d49f24b8c" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-3">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0aVd7QiY8BstysHb62c5Fi?utm_source=generator&si=9d303165cdcc45b0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-4">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/736PP5LTtREkDgktNmX3Gu?utm_source=generator&si=803a06f0cfec4d77" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-5">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2LlOeW5rVcvl3QcPNPcDus?utm_source=generator&si=4b0139cd685f4760" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-6">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3SxSrUogj4LpAkLKXeTtTQ?utm_source=generator&si=69854532f88c4e5a" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-7">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zZ5TnmUIub96AsZmkCXYS?utm_source=generator&si=820efce3c0664cc2" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-8">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1gH1h30wkQdd9zhY3j7a8T?utm_source=generator&si=d8d69024d0d94857" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="embed-item" id="embed-9">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7IVukH71OXfAu3KudrrizN?utm_source=generator&si=fc0826fa41764d07" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="modal-footer-tip">
+        <span>💡 Tap play on Spotify, close this drawer, and swipe through the letters!</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
